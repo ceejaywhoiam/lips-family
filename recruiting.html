@@ -20,13 +20,14 @@
     .step-num {
       width: 60px; height: 60px;
       border-radius: 50%;
-      border: 2px solid var(--neon-cyan);
+      border: 2px solid var(--gold-400);
       display: flex; align-items: center; justify-content: center;
       font-family: var(--font-display);
       font-size: 1.5rem;
-      color: var(--neon-cyan);
-      text-shadow: 0 0 10px var(--neon-cyan);
-      box-shadow: 0 0 15px rgba(0,245,255,0.2);
+      font-weight: 700;
+      color: var(--gold-300);
+      text-shadow: 0 0 10px var(--gold-glow);
+      box-shadow: 0 0 15px var(--gold-glow);
       flex-shrink: 0;
     }
     .step-title {
@@ -44,15 +45,15 @@
     }
     .criteria-item {
       background: var(--bg-card);
-      border: 1px solid rgba(0,245,255,0.1);
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius);
       padding: 1.5rem;
       text-align: center;
       transition: border-color 0.25s, box-shadow 0.25s;
     }
     .criteria-item:hover {
-      border-color: rgba(0,245,255,0.3);
-      box-shadow: 0 0 20px rgba(0,245,255,0.08);
+      border-color: var(--border-gold);
+      box-shadow: 0 0 20px var(--gold-glow);
     }
     .criteria-icon { font-size: 2rem; margin-bottom: 0.75rem; }
     .criteria-name {
@@ -94,9 +95,10 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 50% 100%, rgba(255,45,120,0.3) 0%, transparent 60%), radial-gradient(ellipse at 80% 0%, rgba(155,48,255,0.2) 0%, transparent 50%), linear-gradient(180deg,#060810 0%,#080c18 100%);"></div>
+  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 50% 100%, rgba(212,175,55,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 0%, rgba(200,200,220,0.1) 0%, transparent 50%), linear-gradient(180deg,#0a0a0f 0%,#0c0c14 100%);"></div>
   <div class="page-hero-grid"></div>
-  <p class="page-hero-label">// JOIN THE MOVEMENT</p>
+  <div class="page-hero-crown">♛</div>
+  <p class="page-hero-label">Join the Movement</p>
   <h1 class="page-hero-title">Recruiting</h1>
   <p class="page-hero-desc">We're always growing. If you've got the passion, the craft, and the heart — there's a place for you in LIPS FAMILY.</p>
 </section>
@@ -105,9 +107,9 @@
 <section class="section">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-label">// The Right Fit</span>
+      <span class="section-label">The Right Fit</span>
       <h2 class="section-title">Who We Want</h2>
-      <div class="neon-divider"></div>
+      <div class="royal-divider"></div>
       <p class="section-desc">No skill is too big or too small. We value authenticity, dedication, and community above all.</p>
     </div>
     <div class="criteria-grid">
@@ -151,9 +153,9 @@
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
       <div>
         <div class="section-header reveal" style="text-align:left;">
-          <span class="section-label">// How It Works</span>
+          <span class="section-label">How It Works</span>
           <h2 class="section-title">The Process</h2>
-          <div class="neon-divider" style="margin:1rem 0;"></div>
+          <div class="royal-divider" style="margin:1rem 0;"></div>
         </div>
         <div class="process-step reveal">
           <div class="step-num">01</div>
@@ -187,8 +189,8 @@
 
       <!-- APPLICATION FORM -->
       <div class="reveal">
-        <div class="card" style="background:linear-gradient(145deg,rgba(255,45,120,0.04),rgba(6,8,16,0.9));">
-          <div style="font-family:var(--font-graffiti); font-size:1.5rem; color:var(--neon-pink); text-shadow:0 0 10px var(--neon-pink); margin-bottom:1.5rem;">Apply Now</div>
+        <div class="card" style="background:linear-gradient(145deg,rgba(212,175,55,0.04),rgba(10,10,15,0.9));">
+          <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--gold-300); text-shadow:0 0 10px var(--gold-glow); margin-bottom:1.5rem; letter-spacing:2px;">Apply Now</div>
 
           <form id="recruitForm" action="https://formspree.io/f/LIPS_RECRUIT" method="POST">
             <input type="hidden" name="_subject" value="New LIPS FAMILY Recruitment Application" />
@@ -239,9 +241,9 @@
           </form>
 
           <div id="recruitSuccess" class="form-success">
-            <div style="font-size:2rem; margin-bottom:0.75rem;">🔥</div>
-            <div style="font-family:var(--font-graffiti); font-size:1.5rem; margin-bottom:0.5rem;">APPLICATION RECEIVED</div>
-            <p style="color:var(--text-muted); font-size:0.9rem;">We'll hit you back within 7–10 days. Stay ready.</p>
+            <div style="font-size:2rem; margin-bottom:0.75rem;">♛</div>
+            <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--gold-300); margin-bottom:0.5rem; letter-spacing:2px;">APPLICATION RECEIVED</div>
+            <p style="color:var(--text-muted); font-size:0.95rem; font-style:italic;">We'll hit you back within 7–10 days. Stay ready.</p>
           </div>
         </div>
       </div>
@@ -279,11 +281,11 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2026 <span>LIPS FAMILY</span>. All rights reserved.</p>
-      <p class="footer-copy">Built with 🖤 in Opelousas, LA</p>
+      <p class="footer-copy">Forged with ♛ in Opelousas, LA</p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

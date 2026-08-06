@@ -19,25 +19,26 @@
     .leader-avatar-lg {
       width: 120px; height: 120px;
       border-radius: 50%;
-      border: 2px solid var(--neon-cyan);
-      box-shadow: 0 0 25px rgba(0,245,255,0.35);
+      border: 2px solid var(--gold-400);
+      box-shadow: 0 0 25px var(--gold-glow);
       background: var(--bg-panel);
       display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-graffiti);
+      font-family: var(--font-display);
       font-size: 2.5rem;
-      color: var(--neon-cyan);
+      font-weight: 700;
+      color: var(--gold-300);
       flex-shrink: 0;
     }
     .leader-social { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
     .leader-social a {
       font-family: var(--font-mono); font-size: 0.65rem;
       letter-spacing: 1px; padding: 3px 8px;
-      border: 1px solid rgba(0,245,255,0.2);
+      border: 1px solid var(--border-subtle);
       border-radius: 2px; color: var(--text-muted);
       transition: all 0.2s;
     }
     .leader-social a:hover {
-      border-color: var(--neon-cyan); color: var(--neon-cyan);
+      border-color: var(--gold-400); color: var(--gold-300);
     }
     .timeline { position: relative; padding-left: 2rem; }
     .timeline::before {
@@ -45,7 +46,7 @@
       position: absolute;
       left: 0; top: 0; bottom: 0;
       width: 2px;
-      background: linear-gradient(180deg, var(--neon-pink), var(--neon-cyan), var(--neon-purple));
+      background: linear-gradient(180deg, var(--gold-400), var(--silver-300), var(--gold-600));
     }
     .timeline-item {
       position: relative;
@@ -57,14 +58,14 @@
       left: -2.5rem; top: 0.3rem;
       width: 12px; height: 12px;
       border-radius: 50%;
-      background: var(--neon-cyan);
-      box-shadow: 0 0 10px var(--neon-cyan);
+      background: var(--gold-400);
+      box-shadow: 0 0 10px var(--gold-glow);
     }
     .timeline-year {
       font-family: var(--font-mono);
       font-size: 0.72rem;
       letter-spacing: 3px;
-      color: var(--neon-lime);
+      color: var(--gold-400);
       margin-bottom: 0.3rem;
     }
     .timeline-event {
@@ -104,9 +105,10 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 30% 100%, rgba(0,245,255,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 0%, rgba(184,255,0,0.12) 0%, transparent 50%), linear-gradient(180deg,#060810 0%,#080c18 100%);"></div>
+  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 30% 100%, rgba(212,175,55,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 0%, rgba(200,200,220,0.1) 0%, transparent 50%), linear-gradient(180deg,#0a0a0f 0%,#0c0c14 100%);"></div>
   <div class="page-hero-grid"></div>
-  <p class="page-hero-label">// THE ARCHITECTS</p>
+  <div class="page-hero-crown">♛</div>
+  <p class="page-hero-label">The Architects</p>
   <h1 class="page-hero-title">Leadership</h1>
   <p class="page-hero-desc">The people who built this from the ground up — still here, still building, still pouring into the family every day.</p>
 </section>
@@ -115,22 +117,22 @@
 <section class="section">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-label">// Core Team</span>
+      <span class="section-label">Core Team</span>
       <h2 class="section-title">The Founders</h2>
-      <div class="neon-divider"></div>
+      <div class="royal-divider"></div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:1.5rem;">
 
       <div class="card reveal">
         <div class="leader-card-lg">
-          <div class="leader-avatar-lg" style="border-color:var(--neon-pink); box-shadow:0 0 25px rgba(255,45,120,0.35); color:var(--neon-pink);">C</div>
+          <div class="leader-avatar-lg" style="border-color:var(--gold-400); box-shadow:0 0 25px var(--gold-glow); color:var(--gold-300);">C</div>
           <div>
             <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; margin-bottom:0.3rem;">
               <div class="leader-name" style="font-size:1.5rem;">CORNELIUS</div>
-              <span class="tag tag-pink">Founder & Director</span>
+              <span class="tag tag-gold">Founder & Director</span>
             </div>
-            <div class="leader-role" style="color:var(--neon-pink);">EXECUTIVE DIRECTOR — OPELOUSAS, LA</div>
+            <div class="leader-role" style="color:var(--gold-400);">EXECUTIVE DIRECTOR — OPELOUSAS, LA</div>
             <p class="leader-bio" style="font-size:0.95rem; line-height:1.8;">
               The original vision. Cornelius founded LIPS FAMILY in Opelousas, LA with a spray can and a dream — to create a space where artists of every medium could grow, connect, and build something lasting. His leadership merges street credibility with organizational discipline, keeping the movement both rooted and forward-moving.
             </p>
@@ -143,11 +145,11 @@
 
       <div class="card reveal">
         <div class="leader-card-lg">
-          <div class="leader-avatar-lg" style="border-color:var(--neon-cyan); color:var(--neon-cyan);">R</div>
+          <div class="leader-avatar-lg" style="border-color:var(--silver-300); color:var(--silver-200);">R</div>
           <div>
             <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; margin-bottom:0.3rem;">
               <div class="leader-name" style="font-size:1.5rem;">REMY</div>
-              <span class="tag tag-cyan">Co-Founder</span>
+              <span class="tag tag-silver">Co-Founder</span>
             </div>
             <div class="leader-role">CREATIVE DIRECTOR — LAFAYETTE, LA</div>
             <p class="leader-bio" style="font-size:0.95rem; line-height:1.8;">
@@ -162,13 +164,13 @@
 
       <div class="card reveal">
         <div class="leader-card-lg">
-          <div class="leader-avatar-lg" style="border-color:var(--neon-lime); color:var(--neon-lime);">T</div>
+          <div class="leader-avatar-lg" style="border-color:var(--gold-400); color:var(--gold-300);">T</div>
           <div>
             <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; margin-bottom:0.3rem;">
               <div class="leader-name" style="font-size:1.5rem;">TASHA B.</div>
-              <span class="tag tag-lime">Operations Lead</span>
+              <span class="tag tag-gold">Operations Lead</span>
             </div>
-            <div class="leader-role" style="color:var(--neon-lime);">HEAD OF OPERATIONS — BATON ROUGE, LA</div>
+            <div class="leader-role" style="color:var(--gold-400);">HEAD OF OPERATIONS — BATON ROUGE, LA</div>
             <p class="leader-bio" style="font-size:0.95rem; line-height:1.8;">
               Tasha keeps the machine running. Every event, every membership drive, every partnership agreement runs through her hands. Detail-oriented, deadline-driven, and fiercely protective of the family's integrity.
             </p>
@@ -187,27 +189,27 @@
 <section class="section" style="padding-top:0;">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-label">// Extended Leadership</span>
+      <span class="section-label">Extended Leadership</span>
       <h2 class="section-title">The Council</h2>
-      <div class="neon-divider"></div>
+      <div class="royal-divider"></div>
     </div>
     <div class="grid-3">
       <div class="card leader-card reveal">
-        <div class="leader-avatar" style="border-color:var(--neon-purple); color:var(--neon-purple);">D</div>
+        <div class="leader-avatar" style="border-color:#a890d0; color:#a890d0;">D</div>
         <div class="leader-name">DEX</div>
-        <div class="leader-role" style="color:var(--neon-purple);">Music Director</div>
+        <div class="leader-role" style="color:#a890d0;">Music Director</div>
         <p class="leader-bio">Producer and recording artist managing all audio programming, studio sessions, and music releases for LIPS FAMILY.</p>
       </div>
       <div class="card leader-card reveal">
-        <div class="leader-avatar" style="border-color:var(--neon-orange); color:var(--neon-orange);">M</div>
+        <div class="leader-avatar" style="border-color:var(--gold-400); color:var(--gold-300);">M</div>
         <div class="leader-name">MONIQUE</div>
-        <div class="leader-role" style="color:var(--neon-orange);">Community Liaison</div>
+        <div class="leader-role" style="color:var(--gold-400);">Community Liaison</div>
         <p class="leader-bio">Connects LIPS FAMILY with local organizations, schools, and businesses. The bridge between the movement and the streets.</p>
       </div>
       <div class="card leader-card reveal">
-        <div class="leader-avatar" style="border-color:var(--neon-lime); color:var(--neon-lime);">J</div>
+        <div class="leader-avatar" style="border-color:var(--silver-300); color:var(--silver-200);">J</div>
         <div class="leader-name">JUNIE</div>
-        <div class="leader-role" style="color:var(--neon-lime);">Media Manager</div>
+        <div class="leader-role" style="color:var(--silver-300);">Media Manager</div>
         <p class="leader-bio">Runs all digital channels — content calendars, video production, and brand storytelling across platforms.</p>
       </div>
       <div class="card leader-card reveal">
@@ -217,13 +219,13 @@
         <p class="leader-bio">Designs and leads workshops for youth ages 12–18, teaching creative arts and life skills through culture.</p>
       </div>
       <div class="card leader-card reveal">
-        <div class="leader-avatar" style="border-color:var(--neon-pink); color:var(--neon-pink);">P</div>
+        <div class="leader-avatar" style="border-color:var(--gold-400); color:var(--gold-300);">P</div>
         <div class="leader-name">PHARAOH</div>
-        <div class="leader-role" style="color:var(--neon-pink);">Head of Security</div>
+        <div class="leader-role" style="color:var(--gold-400);">Head of Security</div>
         <p class="leader-bio">Ensures safe spaces at every LIPS FAMILY event. A trusted pillar who makes sure everyone goes home right.</p>
       </div>
       <div class="card leader-card reveal">
-        <div class="leader-avatar" style="border-color:var(--neon-cyan); color:var(--neon-cyan);">S</div>
+        <div class="leader-avatar" style="border-color:var(--silver-300); color:var(--silver-200);">S</div>
         <div class="leader-name">SASHA V.</div>
         <div class="leader-role">Merch & Brand</div>
         <p class="leader-bio">Designs and manages all LIPS FAMILY merchandise, brand partnerships, and product drops.</p>
@@ -233,12 +235,12 @@
 </section>
 
 <!-- TIMELINE -->
-<section class="section" style="background:var(--bg-panel); border-top:1px solid rgba(0,245,255,0.08);">
+<section class="section" style="background:var(--bg-panel); border-top:1px solid var(--border-gold);">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-label">// Our Story</span>
+      <span class="section-label">Our Story</span>
       <h2 class="section-title">How We Got Here</h2>
-      <div class="neon-divider"></div>
+      <div class="royal-divider"></div>
     </div>
     <div style="max-width:640px; margin:0 auto;">
       <div class="timeline">
@@ -307,11 +309,11 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2026 <span>LIPS FAMILY</span>. All rights reserved.</p>
-      <p class="footer-copy">Built with 🖤 in Opelousas, LA</p>
+      <p class="footer-copy">Forged with ♛ in Opelousas, LA</p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

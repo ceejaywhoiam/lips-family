@@ -18,12 +18,13 @@
       margin-bottom: 1rem;
     }
     .faq-item {
-      border-bottom: 1px solid rgba(0,245,255,0.08);
+      border-bottom: 1px solid var(--border-subtle);
       padding: 1.25rem 0;
     }
     .faq-q {
       font-family: var(--font-display);
       font-size: 1rem;
+      font-weight: 600;
       letter-spacing: 1.5px;
       color: var(--text-primary);
       cursor: pointer;
@@ -36,7 +37,7 @@
     .faq-q::after {
       content: '+';
       font-size: 1.4rem;
-      color: var(--neon-cyan);
+      color: var(--gold-400);
       transition: transform 0.25s;
       flex-shrink: 0;
     }
@@ -59,7 +60,7 @@
       width: 100%;
       height: 220px;
       background: var(--bg-panel);
-      border: 1px solid rgba(0,245,255,0.1);
+      border: 1px solid var(--border-gold);
       border-radius: var(--radius);
       display: flex;
       flex-direction: column;
@@ -79,15 +80,15 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(0,245,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,245,255,0.04) 1px, transparent 1px);
+        linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
       background-size: 30px 30px;
     }
     .map-pin {
       font-size: 2.5rem;
       position: relative;
       z-index: 1;
-      filter: drop-shadow(0 0 10px rgba(255,45,120,0.6));
+      filter: drop-shadow(0 0 10px var(--gold-glow));
     }
   </style>
 </head>
@@ -115,9 +116,10 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 50% 100%, rgba(0,245,255,0.2) 0%, transparent 60%), radial-gradient(ellipse at 80% 10%, rgba(155,48,255,0.15) 0%, transparent 50%), linear-gradient(180deg,#060810 0%,#080c18 100%);"></div>
+  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 50% 100%, rgba(212,175,55,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 10%, rgba(200,200,220,0.1) 0%, transparent 50%), linear-gradient(180deg,#0a0a0f 0%,#0c0c14 100%);"></div>
   <div class="page-hero-grid"></div>
-  <p class="page-hero-label">// GET IN TOUCH</p>
+  <div class="page-hero-crown">♛</div>
+  <p class="page-hero-label">Get in Touch</p>
   <h1 class="page-hero-title">Contact</h1>
   <p class="page-hero-desc">Bookings, partnerships, press, general inquiries — we respond to everything. Hit us.</p>
 </section>
@@ -127,20 +129,20 @@
   <div class="section-inner">
     <div class="grid-3">
       <div class="card reveal" style="text-align:center;">
-        <div class="contact-card-icon" style="background:rgba(255,45,120,0.1); border:1px solid rgba(255,45,120,0.2); margin:0 auto;">📧</div>
-        <div style="font-family:var(--font-display); font-size:0.9rem; letter-spacing:2px; color:var(--neon-pink); margin-bottom:0.4rem;">EMAIL</div>
+        <div class="contact-card-icon" style="background:rgba(212,175,55,0.08); border:1px solid var(--border-gold); margin:0 auto;">📧</div>
+        <div style="font-family:var(--font-display); font-size:0.9rem; font-weight:600; letter-spacing:2px; color:var(--gold-300); margin-bottom:0.4rem;">EMAIL</div>
         <a href="mailto:lipsfamily@gmail.com" style="color:var(--text-primary); font-size:0.95rem;">lipsfamily@gmail.com</a>
         <p style="color:var(--text-muted); font-size:0.82rem; margin-top:0.4rem; font-family:var(--font-mono);">Replies within 24–48hrs</p>
       </div>
       <div class="card reveal" style="text-align:center;">
-        <div class="contact-card-icon" style="background:rgba(0,245,255,0.08); border:1px solid rgba(0,245,255,0.2); margin:0 auto;">📞</div>
-        <div style="font-family:var(--font-display); font-size:0.9rem; letter-spacing:2px; color:var(--neon-cyan); margin-bottom:0.4rem;">PHONE</div>
+        <div class="contact-card-icon" style="background:rgba(200,200,220,0.06); border:1px solid var(--border-silver); margin:0 auto;">📞</div>
+        <div style="font-family:var(--font-display); font-size:0.9rem; font-weight:600; letter-spacing:2px; color:var(--silver-200); margin-bottom:0.4rem;">PHONE</div>
         <a href="tel:+13375550100" style="color:var(--text-primary); font-size:0.95rem;">(337) 555-0100</a>
         <p style="color:var(--text-muted); font-size:0.82rem; margin-top:0.4rem; font-family:var(--font-mono);">Mon–Fri, 10AM–6PM CDT</p>
       </div>
       <div class="card reveal" style="text-align:center;">
-        <div class="contact-card-icon" style="background:rgba(184,255,0,0.08); border:1px solid rgba(184,255,0,0.2); margin:0 auto;">📍</div>
-        <div style="font-family:var(--font-display); font-size:0.9rem; letter-spacing:2px; color:var(--neon-lime); margin-bottom:0.4rem;">LOCATION</div>
+        <div class="contact-card-icon" style="background:rgba(212,175,55,0.08); border:1px solid var(--border-gold); margin:0 auto;">📍</div>
+        <div style="font-family:var(--font-display); font-size:0.9rem; font-weight:600; letter-spacing:2px; color:var(--gold-300); margin-bottom:0.4rem;">LOCATION</div>
         <span style="color:var(--text-primary); font-size:0.95rem;">Opelousas, Louisiana</span>
         <p style="color:var(--text-muted); font-size:0.82rem; margin-top:0.4rem; font-family:var(--font-mono);">St. Landry Parish, LA</p>
       </div>
@@ -159,12 +161,12 @@
         <div class="map-placeholder reveal" style="margin-bottom:2rem;">
           <div class="map-pin">📍</div>
           <span>Opelousas, Louisiana</span>
-          <span style="color:var(--neon-cyan);">St. Landry Parish</span>
+          <span style="color:var(--gold-400);">St. Landry Parish</span>
         </div>
 
         <!-- Quick links -->
         <div class="card reveal" style="margin-bottom:1.5rem;">
-          <div style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:3px; color:var(--neon-cyan); margin-bottom:1rem; text-transform:uppercase;">// Quick Inquiries</div>
+          <div style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:3px; color:var(--gold-400); margin-bottom:1rem; text-transform:uppercase;">Quick Inquiries</div>
           <div style="display:flex; flex-direction:column; gap:0.75rem;">
             <a href="#contactForm" class="btn btn-outline btn-sm" style="justify-content:space-between;">Booking Request <span>→</span></a>
             <a href="recruiting.html" class="btn btn-outline btn-sm" style="justify-content:space-between;">Join / Apply <span>→</span></a>
@@ -175,18 +177,18 @@
 
         <!-- Social links -->
         <div class="card reveal">
-          <div style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:3px; color:var(--neon-cyan); margin-bottom:1rem; text-transform:uppercase;">// Social Media</div>
+          <div style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:3px; color:var(--gold-400); margin-bottom:1rem; text-transform:uppercase;">Social Media</div>
           <div style="display:flex; flex-direction:column; gap:0.6rem;">
-            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.9rem; transition:color 0.2s;" onmouseover="this.style.color='var(--neon-pink)'" onmouseout="this.style.color='var(--text-muted)'">
+            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='var(--gold-300)'" onmouseout="this.style.color='var(--text-muted)'">
               <span style="width:32px; text-align:center; font-size:1.2rem;">📸</span> @lipsfamily
             </a>
-            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.9rem; transition:color 0.2s;" onmouseover="this.style.color='var(--neon-cyan)'" onmouseout="this.style.color='var(--text-muted)'">
+            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='var(--silver-200)'" onmouseout="this.style.color='var(--text-muted)'">
               <span style="width:32px; text-align:center; font-size:1.2rem;">🎵</span> @lipsfamily
             </a>
-            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.9rem; transition:color 0.2s;" onmouseover="this.style.color='var(--neon-lime)'" onmouseout="this.style.color='var(--text-muted)'">
+            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='var(--gold-300)'" onmouseout="this.style.color='var(--text-muted)'">
               <span style="width:32px; text-align:center; font-size:1.2rem;">▶️</span> LIPS FAMILY
             </a>
-            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.9rem; transition:color 0.2s;" onmouseover="this.style.color='var(--neon-purple)'" onmouseout="this.style.color='var(--text-muted)'">
+            <a href="#" style="display:flex; align-items:center; gap:0.75rem; color:var(--text-muted); font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='#a890d0'" onmouseout="this.style.color='var(--text-muted)'">
               <span style="width:32px; text-align:center; font-size:1.2rem;">✖️</span> @LIPSFAMILYofficial
             </a>
           </div>
@@ -195,9 +197,9 @@
 
       <!-- Right col: contact form -->
       <div class="reveal">
-        <div class="card" style="background:linear-gradient(145deg,rgba(0,245,255,0.03),rgba(6,8,16,0.9));">
-          <div style="font-family:var(--font-graffiti); font-size:1.5rem; color:var(--neon-cyan); text-shadow:0 0 10px var(--neon-cyan); margin-bottom:0.25rem;">Send a Message</div>
-          <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:1.75rem; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:1px;">We read every message. Real ones get real replies.</p>
+        <div class="card" style="background:linear-gradient(145deg,rgba(212,175,55,0.03),rgba(10,10,15,0.9));">
+          <div style="font-family:var(--font-display); font-size:1.5rem; font-weight:700; color:var(--gold-300); text-shadow:0 0 10px var(--gold-glow); margin-bottom:0.25rem; letter-spacing:2px;">Send a Message</div>
+          <p style="color:var(--text-muted); margin-bottom:1.75rem; font-family:var(--font-mono); font-size:0.75rem; letter-spacing:1px;">We read every message. Real ones get real replies.</p>
 
           <form id="contactForm" action="https://formspree.io/f/LIPS_CONTACT" method="POST">
             <input type="hidden" name="_subject" value="New LIPS FAMILY Contact Message" />
@@ -255,9 +257,9 @@
           </form>
 
           <div id="contactSuccess" class="form-success">
-            <div style="font-size:2.5rem; margin-bottom:0.75rem;">✅</div>
-            <div style="font-family:var(--font-graffiti); font-size:1.8rem; margin-bottom:0.5rem; color:var(--neon-lime);">MESSAGE RECEIVED</div>
-            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.7;">We'll be back in your inbox within 24–48 hours. Stay tuned.</p>
+            <div style="font-size:2.5rem; margin-bottom:0.75rem;">♛</div>
+            <div style="font-family:var(--font-display); font-size:1.8rem; font-weight:700; margin-bottom:0.5rem; color:var(--gold-300); letter-spacing:2px;">MESSAGE RECEIVED</div>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; font-style:italic;">We'll be back in your inbox within 24–48 hours. Stay tuned.</p>
           </div>
         </div>
       </div>
@@ -269,9 +271,9 @@
 <section class="section" style="padding-top:0; padding-bottom:4rem;">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-label">// Quick Answers</span>
+      <span class="section-label">Quick Answers</span>
       <h2 class="section-title">FAQ</h2>
-      <div class="neon-divider"></div>
+      <div class="royal-divider"></div>
     </div>
     <div style="max-width:720px; margin:0 auto;" class="reveal">
       <div class="faq-item">
@@ -333,12 +335,12 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2026 <span>LIPS FAMILY</span>. All rights reserved.</p>
-      <p class="footer-copy">Built with 🖤 in Opelousas, LA</p>
+      <p class="footer-copy">Forged with ♛ in Opelousas, LA</p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 <script>
   /* FAQ accordion */
   document.querySelectorAll('.faq-item').forEach(item => {

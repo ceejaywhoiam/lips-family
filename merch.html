@@ -16,9 +16,9 @@
     }
     .merch-qty-btn {
       width: 30px; height: 30px;
-      border: 1px solid rgba(0,245,255,0.3);
+      border: 1px solid var(--border-gold);
       background: transparent;
-      color: var(--neon-cyan);
+      color: var(--gold-300);
       border-radius: 3px;
       cursor: pointer;
       font-size: 1.1rem;
@@ -26,8 +26,8 @@
       transition: all 0.2s;
     }
     .merch-qty-btn:hover {
-      background: rgba(0,245,255,0.1);
-      box-shadow: 0 0 8px rgba(0,245,255,0.2);
+      background: rgba(212,175,55,0.08);
+      box-shadow: 0 0 8px var(--gold-glow);
     }
     .qty-display {
       font-family: var(--font-mono);
@@ -37,8 +37,8 @@
       color: var(--text-primary);
     }
     .drop-banner {
-      background: linear-gradient(135deg, rgba(255,45,120,0.15), rgba(155,48,255,0.15));
-      border: 1px solid rgba(255,45,120,0.3);
+      background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(200,200,220,0.06));
+      border: 1px solid var(--border-gold);
       border-radius: var(--radius);
       padding: 2rem;
       text-align: center;
@@ -51,9 +51,10 @@
       position: absolute;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%) rotate(-15deg);
-      font-family: var(--font-graffiti);
+      font-family: var(--font-display);
       font-size: 8rem;
-      color: rgba(255,45,120,0.04);
+      font-weight: 700;
+      color: rgba(212,175,55,0.04);
       white-space: nowrap;
       pointer-events: none;
     }
@@ -67,8 +68,9 @@
     .countdown-num {
       font-family: var(--font-display);
       font-size: 2.5rem;
-      color: var(--neon-pink);
-      text-shadow: 0 0 15px var(--neon-pink);
+      font-weight: 700;
+      color: var(--gold-300);
+      text-shadow: 0 0 15px var(--gold-glow);
       display: block;
       line-height: 1;
     }
@@ -84,28 +86,30 @@
     }
     .size-btn {
       font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 1px;
-      padding: 4px 10px; border: 1px solid rgba(0,245,255,0.2);
+      padding: 4px 10px; border: 1px solid var(--border-subtle);
       background: transparent; color: var(--text-muted);
       border-radius: 2px; cursor: pointer; transition: all 0.2s;
     }
     .size-btn:hover, .size-btn.selected {
-      border-color: var(--neon-cyan); color: var(--neon-cyan);
-      background: rgba(0,245,255,0.08);
+      border-color: var(--gold-400); color: var(--gold-300);
+      background: rgba(212,175,55,0.06);
     }
     .sold-out-overlay {
       position: absolute; inset: 0;
-      background: rgba(6,8,16,0.75);
+      background: rgba(10,10,15,0.75);
       display: flex; align-items: center; justify-content: center;
       border-radius: var(--radius);
     }
     .sold-out-label {
-      font-family: var(--font-graffiti);
-      font-size: 1.8rem;
-      color: var(--neon-pink);
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-muted);
       transform: rotate(-20deg);
-      text-shadow: 0 0 20px var(--neon-pink);
-      border: 3px solid var(--neon-pink);
+      text-shadow: 0 0 20px var(--text-dim);
+      border: 2px solid var(--text-dim);
       padding: 0.25rem 0.75rem;
+      letter-spacing: 2px;
     }
     .category-tabs {
       display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;
@@ -113,14 +117,14 @@
     .cat-tab {
       font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 2px;
       padding: 0.5rem 1.25rem;
-      border: 1px solid rgba(0,245,255,0.15);
+      border: 1px solid var(--border-subtle);
       background: transparent; color: var(--text-muted);
       border-radius: 3px; cursor: pointer; transition: all 0.2s;
       text-transform: uppercase;
     }
     .cat-tab:hover, .cat-tab.active {
-      border-color: var(--neon-cyan); color: var(--neon-cyan);
-      background: rgba(0,245,255,0.06);
+      border-color: var(--gold-400); color: var(--gold-300);
+      background: rgba(212,175,55,0.06);
     }
   </style>
 </head>
@@ -148,9 +152,10 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 60% 100%, rgba(155,48,255,0.3) 0%, transparent 60%), radial-gradient(ellipse at 30% 0%, rgba(255,45,120,0.15) 0%, transparent 50%), linear-gradient(180deg,#060810 0%,#080c18 100%);"></div>
+  <div class="page-hero-bg" style="background: radial-gradient(ellipse at 60% 100%, rgba(212,175,55,0.15) 0%, transparent 60%), radial-gradient(ellipse at 30% 0%, rgba(200,200,220,0.1) 0%, transparent 50%), linear-gradient(180deg,#0a0a0f 0%,#0c0c14 100%);"></div>
   <div class="page-hero-grid"></div>
-  <p class="page-hero-label">// REP THE FAMILY</p>
+  <div class="page-hero-crown">♛</div>
+  <p class="page-hero-label">Rep the Family</p>
   <h1 class="page-hero-title">Merch</h1>
   <p class="page-hero-desc">Official LIPS FAMILY gear — limited runs, real culture. Wear it with meaning.</p>
 </section>
@@ -159,9 +164,9 @@
 <section class="section" style="padding-bottom:0;">
   <div class="section-inner">
     <div class="drop-banner reveal">
-      <span class="section-label">// EXCLUSIVE DROP</span>
-      <h2 style="font-family:var(--font-graffiti); font-size:clamp(1.8rem,4vw,3rem); color:var(--text-primary); text-shadow:0 0 20px rgba(255,45,120,0.5); margin:0.5rem 0;">CYBER NIGHT DROP 003</h2>
-      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1rem;">Dropping at the November Pop-Up Market. Limited to 150 units. No restocks.</p>
+      <span class="section-label">Exclusive Drop</span>
+      <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,4vw,3rem); font-weight:700; letter-spacing:2px; background:linear-gradient(135deg,var(--gold-300),var(--silver-200));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; margin:0.5rem 0;">ROYAL DROP 003</h2>
+      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1rem; font-style:italic;">Dropping at the November Pop-Up Market. Limited to 150 units. No restocks.</p>
       <div class="countdown-wrap" id="countdown">
         <div class="countdown-unit"><span class="countdown-num" id="cd-days">93</span><span class="countdown-label">Days</span></div>
         <div class="countdown-unit"><span class="countdown-num" id="cd-hrs">08</span><span class="countdown-label">Hours</span></div>
@@ -187,11 +192,11 @@
 
       <!-- Tee 1 -->
       <div class="card merch-card reveal" data-cat="apparel">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(255,45,120,0.15),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(212,175,55,0.1),rgba(10,10,15,0.9));">
           <span class="merch-emoji">👕</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-pink">Apparel</span></div>
-        <div class="merch-name">NEON NIGHTS TEE</div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-gold">Apparel</span></div>
+        <div class="merch-name">ROYAL NIGHTS TEE</div>
         <div class="merch-price">$38</div>
         <div class="size-selector">
           <button class="size-btn selected">S</button>
@@ -210,11 +215,11 @@
 
       <!-- Hoodie -->
       <div class="card merch-card reveal" data-cat="apparel">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(155,48,255,0.15),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(168,144,208,0.1),rgba(10,10,15,0.9));">
           <span class="merch-emoji">🧥</span>
         </div>
         <div style="margin-bottom:0.3rem;"><span class="tag tag-purple">Apparel</span></div>
-        <div class="merch-name">GRAFFITI HOODIE</div>
+        <div class="merch-name">CROWN HOODIE</div>
         <div class="merch-price">$72</div>
         <div class="size-selector">
           <button class="size-btn">S</button>
@@ -232,11 +237,11 @@
 
       <!-- Cap -->
       <div class="card merch-card reveal" data-cat="accessories">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(0,245,255,0.12),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(200,200,220,0.1),rgba(10,10,15,0.9));">
           <span class="merch-emoji">🧢</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-cyan">Accessories</span></div>
-        <div class="merch-name">CYBER SNAP-BACK</div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-silver">Accessories</span></div>
+        <div class="merch-name">ROYAL SNAP-BACK</div>
         <div class="merch-price">$32</div>
         <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); margin-bottom:0.75rem;">One Size Fits All</div>
         <div class="merch-qty">
@@ -249,10 +254,10 @@
 
       <!-- Art Print -->
       <div class="card merch-card reveal" data-cat="art">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(184,255,0,0.12),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(212,175,55,0.08),rgba(10,10,15,0.9));">
           <span class="merch-emoji">🖼️</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-lime">Art Print</span></div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-gold">Art Print</span></div>
         <div class="merch-name">WALLS SPEAK PRINT</div>
         <div class="merch-price">$55</div>
         <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); margin-bottom:0.75rem;">18×24" / Signed Ed.</div>
@@ -266,10 +271,10 @@
 
       <!-- Tote -->
       <div class="card merch-card reveal" data-cat="accessories">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(255,107,0,0.12),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(200,176,80,0.1),rgba(10,10,15,0.9));">
           <span class="merch-emoji">👜</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-orange">Accessories</span></div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-royal">Accessories</span></div>
         <div class="merch-name">FAMILY TOTE BAG</div>
         <div class="merch-price">$24</div>
         <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); margin-bottom:0.75rem;">Heavy Canvas / One Size</div>
@@ -283,10 +288,10 @@
 
       <!-- Long Sleeve -->
       <div class="card merch-card reveal" data-cat="apparel">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(0,245,255,0.08),rgba(255,45,120,0.08),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(200,200,220,0.06),rgba(212,175,55,0.06),rgba(10,10,15,0.9));">
           <span class="merch-emoji">🫱</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-cyan">Apparel</span></div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-silver">Apparel</span></div>
         <div class="merch-name">LOGO LONGSLEEVE</div>
         <div class="merch-price">$46</div>
         <div class="size-selector">
@@ -305,7 +310,7 @@
 
       <!-- SOLD OUT sticker pack -->
       <div class="card merch-card reveal" data-cat="accessories" style="position:relative;">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(155,48,255,0.1),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(168,144,208,0.08),rgba(10,10,15,0.9));">
           <span class="merch-emoji">🎨</span>
           <div class="sold-out-overlay">
             <div class="sold-out-label">SOLD OUT</div>
@@ -319,11 +324,11 @@
 
       <!-- Art Print 2 -->
       <div class="card merch-card reveal" data-cat="art">
-        <div class="merch-img" style="background:linear-gradient(135deg,rgba(255,45,120,0.1),rgba(155,48,255,0.1),rgba(6,8,16,0.9));">
+        <div class="merch-img" style="background:linear-gradient(135deg,rgba(212,175,55,0.08),rgba(168,144,208,0.08),rgba(10,10,15,0.9));">
           <span class="merch-emoji">✍️</span>
         </div>
-        <div style="margin-bottom:0.3rem;"><span class="tag tag-lime">Art Print</span></div>
-        <div class="merch-name">CYBER NIGHT POSTER</div>
+        <div style="margin-bottom:0.3rem;"><span class="tag tag-gold">Art Print</span></div>
+        <div class="merch-name">ROYAL NIGHT POSTER</div>
         <div class="merch-price">$40</div>
         <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); margin-bottom:0.75rem;">12×18" / Open Ed.</div>
         <div class="merch-qty">
@@ -341,8 +346,8 @@
 <!-- CART NOTICE -->
 <section style="padding: 2rem; text-align:center;">
   <div class="section-inner">
-    <div class="card reveal" style="max-width:600px; margin:0 auto; background:linear-gradient(135deg,rgba(0,245,255,0.05),rgba(6,8,16,0.9));">
-      <p style="font-family:var(--font-mono); font-size:0.8rem; letter-spacing:2px; color:var(--neon-cyan); margin-bottom:0.5rem;">// HOW TO ORDER</p>
+    <div class="card reveal" style="max-width:600px; margin:0 auto; background:linear-gradient(135deg,rgba(212,175,55,0.04),rgba(10,10,15,0.9));">
+      <p style="font-family:var(--font-mono); font-size:0.8rem; letter-spacing:2px; color:var(--gold-400); margin-bottom:0.5rem;">How to Order</p>
       <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.7;">
         Full e-commerce launches with <strong style="color:var(--text-primary);">Drop 003</strong> in November. Until then, place orders through our contact form or DM us on Instagram. We ship within 5–7 business days.
       </p>
@@ -384,12 +389,12 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2026 <span>LIPS FAMILY</span>. All rights reserved.</p>
-      <p class="footer-copy">Built with 🖤 in Opelousas, LA</p>
+      <p class="footer-copy">Forged with ♛ in Opelousas, LA</p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/main.js"></script>
 <script>
   /* Merch category filter */
   document.querySelectorAll('.cat-tab').forEach(btn => {
